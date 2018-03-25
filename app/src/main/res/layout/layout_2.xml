@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/l2_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Welcome"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="105dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="90dp"
+        android:background="@drawable/sid" />
+    <TextView
+        android:id="@+id/l2_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_margin="15dp"
+        android:text="I am Siddharth Saurabh.
+I am persuing B.tech degree from xyz university and i am presently in my 4th year.This app is my first build for testing how the linear colour gradient works.I am sure many of you are trying for this..All the best and keep trying.Be happy as a coder and learner!"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/l3_t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:onClick="terminate"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="145dp"/>
+
+
+</LinearLayout>

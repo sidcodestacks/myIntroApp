@@ -1,5 +1,6 @@
 package com.example.siddharth.myintroapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -23,10 +24,16 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
     }
+
     public void clickFun(View view){
         EditText editText= (EditText)findViewById(R.id.editText);
         Log.i("Info",editText.getText().toString());
-        Toast.makeText(MainActivity.this, "Hello "+editText.getText().toString()+" .This is siddharth!",Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Hello "+editText.getText().toString(),Toast.LENGTH_SHORT).show();
+        Intent getname=new Intent(this,secondScreen.class);
+        final int result=1;
+        getname.putExtra("CallingActivity","MainActivity");
+        startActivity(getname);
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
